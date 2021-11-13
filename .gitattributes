@@ -1,1 +1,2 @@
 inditio-service.7z filter=lfs diff=lfs merge=lfs -text
+inditio-service.zip filter=lfs diff=lfs merge=lfs -text
