@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1> Inidtio Service</h1>
-
-    <a href="https://github.com/Daniele-Damiano/Inditio-Service/raw/main/inditio-service.7z" download>Download File</a>
+    <p>Ogni richiesta GET prende 6 argometi che devono essere tutti specificati</p> 
+    <p>In caso di parametri mancanti bisogna inserire <code>null</code></p>
+    <p>Esempio di richiesta GET per l'algoritmo DIME:</p>
+    <p>http://localhost:8080/inditio-service/rs/algorithms/dime/DIME,iris.csv,1,1,true,null,null,null</p>
+    <p>Esempio di richiesta GET per l'algoritmo DOMINO:</p>
+    <p> http://localhost:8080/inditio-service/rs/algorithms/domino/Domino,iris.csv,false,,,null,false,4,true</p>
+    <p>In caso dell'algoritmo DOMINO non lo si puo chiamare se nell'url e presnte <code>?</code></p>
+    <p>Bisogna inserire <code>null</code> altrimenti viene interpretata come un inizio di inserimento di parametri è da errore.</p>
+    <a href="https://github.com/Daniele-Damiano/Inditio-Service/blob/main/inditio-service.zip" download>Download File</a>
 </body>
 </html>
+
